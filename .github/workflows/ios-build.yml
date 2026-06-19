@@ -1,19 +1,19 @@
-
 name: Practice Build
 
 on:
   push:
-     branches:
-        -main
-        
+    branches:
+      - main
 
 jobs:
   build:
-   runs-on: macos-latest
-   
+
+    runs-on: macos-latest
+
     steps:
-    
-     - uses: actions/checkout@v4
-     - name: Print Message
-     
-     run: echo "Building App"
+
+      - uses: actions/checkout@v4
+
+      - name: Print Message
+
+        run: echo "Building App"
